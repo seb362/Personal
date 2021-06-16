@@ -1,0 +1,333 @@
+html{
+    background-color: rgb(230,230,250);
+    /*background-image: repeating-linear-gradient(lavender 20px,rgb(215, 215, 247) 25px,lavender 20px);*/
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+h2{
+  text-align: center;
+  font-size: 200%;
+  margin-top: 3em;
+}
+
+h3{
+  text-align: center;
+  font-size: 150%;
+}
+
+
+/*HEADER FORMATTING ----------------------------------------*/
+.buttonOther{
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50px;
+    height: 2.5em;
+    width:8em;
+    margin-top: -2em;
+    font-size: 1em;
+}
+
+.specialButton{
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50px;
+    border-width: .4em;
+    height: 2.5em;
+    width: 8em;
+    margin-top: -2em;
+    font-size: 1em;
+}
+
+#other_button{
+    flex: auto;
+    height: 1em;
+    margin-bottom: 1em;
+}
+
+#headerNav{
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+/*END HEADER FORMATTING ---------------------------------------*/
+/*INDEX PAGE FORMATTING ----------------------------------------*/
+    #IndexOverall{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #IndexImg{
+        flex: 1;
+        text-align: center;
+       /* border-style: solid;
+        border-color: blue; */
+    }
+
+    #ResumeOverall{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #ResumeRight{
+      border-style: dotted;
+      font-size: 2em;
+      width: 30%;
+      margin-left: 7.5em;
+      margin-right: 2em;
+      text-align: center;
+    }
+
+    #ResumeRight p{
+      font-size: 1.5em;
+    }
+/*
+    #ResumeImgRight{
+      border-style: dotted;
+      font-size: 2em;
+      width: 40%;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+    */
+
+    #ResumeLeft{
+      border-style: dashed;
+      font-size: 2em;
+      width: 30%;
+      margin-left: 8.5em;
+      margin-right: 0em;
+      text-align: center;
+    }
+
+    #ResumeLeft p{
+      font-size: 1.5em;
+    }
+
+/*
+    #ResumeImgLeft{
+      border-style: dashed;
+      font-size: 2em;
+      width: 40%;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+    */
+
+    .vastsImg{
+        height: 10.5em;
+        width: 12em;
+        align-items: center;
+        border-radius: 25%;
+    }
+
+    .chessImg{
+          height: 10.5em;
+          width: 12em;
+          align-items: center;
+          border-radius: 25%;
+    }
+
+    #WebsiteImgFormat{
+        text-align: center;
+
+    }
+
+    .WebsiteImg{
+      width: 50%;
+      height: 50%;
+      border-style: solid;
+      border-color: rgb(220,220,245);
+    }
+
+    #RCFormat{
+        text-align: center;
+    }
+
+    .RCImg{
+      width: 50%;
+      height: 50%;
+    }
+
+    #tacoVideo{
+      text-align: center;
+    }
+
+    #IndexNav{
+        flex: 1;
+    }
+
+    .IndexPortrait{
+        display: block;
+        height: 24em;
+        width: 24em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 500px;
+        border-style: solid;
+        border-color: rgb(144, 144, 224);
+    }
+
+    #IndexDesc{
+      text-align: center;
+      font-size: 1.8em;
+      margin-left: 9.5em;
+      margin-right: 9.5em;
+    }
+
+
+  #index_button{
+        height: 5em;
+        margin-bottom: 8em;
+        align-self: center;
+        font-size: 16pt;
+    }
+
+      .index_button {
+        /* Full width border and a clip-path visually cutting it down to the starting size */
+        border: solid 10px blue;
+        clip-path: polygon(
+          calc(0% + 5px) calc(0% + 5px), /* top left */
+          calc(100% - 5px) calc(0% + 5px), /* top right */
+          calc(100% - 5px) calc(100% - 5px), /* bottom right */
+          calc(0% + 5px) calc(100% - 5px) /* bottom left */
+        );
+        transition: clip-path 0.6s linear;
+        height: 8em;
+        width: 40em;
+        margin-top: 1em;
+        font-size: 1em;
+      }
+
+    .index_button:hover {
+      /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .button{
+        border-style: solid;
+        border-color: blue;
+        height: 8em;
+        width: 40em;
+        margin-top: 1em;
+        font-size: 1em;
+    }
+/*END INDEX PAGE FORMATTING ---------------------------------------*/
+/*ABOUT PAGE FORMATTING ----------------------------------------*/
+
+#aboutOverall{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#missionStatement{
+    flex: 1;
+    font-size: 2em;
+    margin-top: 5.5em;
+
+}
+
+#aboutRest{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:  column;
+    flex: 1;
+    width: 60em;
+}
+
+#left{
+    flex: 2;
+}
+
+#caption{
+    flex-direction: column;
+    text-align: center;
+}
+
+/*END ABOUT PAGE FORMATTING ---------------------------------------*/
+/*CONTACT PAGE FORMATTING --------------------------------------*/
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: blue;
+    width: 50%;
+    margin-left: 25%;
+
+}
+
+#contactElement{
+    margin-top: 1em;
+    margin-left: 7em;
+    font-size: 25px;
+    margin-bottom:.5em;
+
+}
+
+.subButton{
+    height: 3em;
+    width: 8em;
+    border-radius: 20%;
+}
+
+#formError{
+    color: red;
+}
+
+#formResponse{
+    font-size: 25px;
+}
+
+#contactExplain{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 2em;
+    margin-left: 27em;
+    margin-right: 27em;
+
+}
+/*END CONTACT FORMATTING---------------------------------------*/
+/*RESUME PAGE FORMATTING --------------------------------------*/
+
+#resumePic{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+
+/*END RESUME FORMATTING---------------------------------------*/
+
+/*FOOTER FORMATTING --------------------------------------*/
+
+footer{
+    background-color: rgb(225,225,245);
+    font-size: 20pt;
+    text-align: right;
+    margin-left: -2em;
+    margin-right: -2em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*END FOOTER FORMATTING---------------------------------------*/
